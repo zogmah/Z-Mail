@@ -1,0 +1,31 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Mail | Iniciar Sesión</title>
+    <link rel="stylesheet" href="deco/stylesMain.css">
+</head>
+<body>
+    <header>
+        <div class="container hero">
+            <div class="container-logo">
+                <h1 class="logo"><a href="index.html">Z-Mail</a></h1>
+            </div>
+        </div>
+    </header>
+    <div class="login">
+        <h2>Inicio de Sesión</h2>
+        <form action="scripts/login.php" method="POST">
+            <label for="usuario">Nombre de Usuario</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="contraseña">Contraseña</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+        <p>¿Todavía no tienes una cuenta?</p> <a href="registro.html">¡Registrate Aquí!</a>
+    </div>
+
+</body>
+</html>
