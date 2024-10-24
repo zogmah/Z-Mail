@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
             $_SESSION['username'] = $user['username'];
             echo "Inicio de sesión exitoso";
 
-            // WIP!!! Incluir la redirección a la página de inicio una vez este hecha
+            // WIP!!! Incluir la redirección al inbox una vez este hecho
 
         } else {
             echo "Nombre de usuario o contraseña incorrectos";

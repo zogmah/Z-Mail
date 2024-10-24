@@ -15,9 +15,9 @@
         </div>
     </header>
     
-    <div class="registro">
+    <div class="registroForm">
         <h2>Registro de Usuarios</h2>
-        <form action="scripts/register.php" method="post">
+        <form action="scripts/register.php" method="post" onsubmit="return validateEmail()">
             <label for="usuario">Nombre de usuario: </label><br>
             <input type="text" id="username" name="username" required><br>
 
@@ -31,5 +31,7 @@
         </form>
         <p>¿Ya tienes una cuenta?</p><a href="login.html">¡Inicia sesión aquí!</a>
     </div>
+
+    <script src="scripts/formValidation.js"></script>
 </body>
 </html>
