@@ -18,9 +18,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
             session_start();
             $_SESSION['user_id'] = $user['user_id'];
             $_SESSION['username'] = $user['username'];
-            echo "Inicio de sesión exitoso";
-
-            // WIP!!! Incluir la redirección al inbox una vez este hecho
+            header("Location: ../inbox.php");
+            exit();
 
         } else {
             echo "Nombre de usuario o contraseña incorrectos";
