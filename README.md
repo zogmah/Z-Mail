@@ -9,3 +9,6 @@ En el primer commit se subió la página con las funcionalidades más básicas, 
 
 ## Segundo Commit
 Principalmente se añadieron las funciones básicas para enviar mensajes y que se guarden en la base de datos solamente si existe el correo del destinatario. Aparte de eso de añadio una verificación de correo electrónico al registro para verificar que el formato sea adecuado.
+
+## Tercer Commit
+Unicamente se añadio una página para ver los mensajes que le fueron enviados a cada usuario, además de eso se hizo la redirección del login para el inbox del usuario.
