@@ -6,3 +6,6 @@ La página actualmente solo es accesible de manera local.
 
 ## Primer Commit
 En el primer commit se subió la página con las funcionalidades más básicas, se creo la base de datos con MySQL y se conecto a la página web con el uso de PHP. Las únicas páginas disponibles son el index con un login, una página para registrarse y una página para iniciar sesión en la página. Todavía no se incluyo el uso de css ya que la idea era subir las funciones más básicas de registro de usuarios y de inicio de sesión. 
+
+## Segundo Commit
+Principalmente se añadieron las funciones básicas para enviar mensajes y que se guarden en la base de datos solamente si existe el correo del destinatario. Aparte de eso de añadio una verificación de correo electrónico al registro para verificar que el formato sea adecuado.
