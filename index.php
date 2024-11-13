@@ -33,11 +33,11 @@ $conn->close();
             <div class="login-logo">
                 <img src="deco/logo.png" alt="Z-Mail Logo" class="logo-img">
             </div>
-            <h2>Inicia sesión</h2>
+            <h2>Iniciar sesión</h2>
             <p class="login-subtext"><?php echo htmlspecialchars($config['eslogan']); ?></p>
 
             <form action="scripts/login.php" method="POST" class="login-form">
-                <label for="username">Correo electrónico o teléfono</label>
+                <label for="username">Nombre de Usuario</label>
                 <input type="text" id="username" name="username" required>
 
                 <label for="password">Contraseña</label>

@@ -44,13 +44,5 @@
             </form>
         </div>
     </div>
-
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="#">Ayuda</a>
-            <a href="#">Privacidad</a>
-            <a href="#">Términos</a>
-        </div>
-    </footer>
 </body>
 </html>

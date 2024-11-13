@@ -8,6 +8,8 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
+$user_id = $_SESSION['user_id'];
+
 // Verificar si la cuenta del usuario está activa
 $stmt_status = $conn->prepare("SELECT estado FROM usuario WHERE user_id = ?");
 $stmt_status->bind_param("i", $user_id);
@@ -23,12 +25,11 @@ if ($estado == 0) {
     session_destroy();
 
     // Redirigir al inicio con un mensaje
-    header("Location: index.php");
+    header("Location: index.php?error=account_disabled");
     exit();
 }
 
 // Obtener información del usuario para mostrar en el header
-$user_id = $_SESSION['user_id'];
 $stmt_user = $conn->prepare("SELECT username FROM usuario WHERE user_id = ?");
 $stmt_user->bind_param("i", $user_id);
 $stmt_user->execute();
@@ -118,14 +119,6 @@ $result = $stmt->get_result();
             <div id="modal-texto"></div>
         </div>
     </div>
-
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="#">Ayuda</a>
-            <a href="#">Privacidad</a>
-            <a href="#">Términos</a>
-        </div>
-    </footer>
 
     <script>
         // Modal handling
