@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -5,32 +6,38 @@
     <title>Z-Mail | Registro de Usuario</title>
     <link rel="stylesheet" href="deco/stylesMain.css">
 </head>
-
 <body>
-    <header>
-        <div class="container hero">
-            <div class="container-logo">
-                <h1 class="logo"><a href="index.html">Z-Mail</a></h1>
+    <div class="background">
+        <div class="register-container">
+            <div class="login-logo">
+                <img src="deco/logo.png" alt="Z-Mail Logo" class="logo-img">
             </div>
+            <h2>Registro de Usuarios</h2>
+
+            <form action="scripts/register.php" method="post" class="register-form" onsubmit="return validateEmail()">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" value="Registrar" class="register-button">
+            </form>
+
+            <p class="already-have-account">¿Ya tienes una cuenta? <a href="index.html">¡Inicia sesión aquí!</a></p>
         </div>
-    </header>
-    
-    <div class="registroForm">
-        <h2>Registro de Usuarios</h2>
-        <form action="scripts/register.php" method="post" onsubmit="return validateEmail()">
-            <label for="usuario">Nombre de usuario: </label><br>
-            <input type="text" id="username" name="username" required><br>
-
-            <label for="email">Correo Electrónico: </label><br>
-            <input type="text" id="email" name="email" required><br>
-
-            <label for="contraseña">Contraseña</label><br>
-            <input type="password" id="password" name="password" required><br>
-
-            <input type="submit" value="Registrar">
-        </form>
-        <p>¿Ya tienes una cuenta?</p><a href="login.html">¡Inicia sesión aquí!</a>
     </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Ayuda</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+        </div>
+    </footer>
 
     <script src="scripts/formValidation.js"></script>
 </body>
