@@ -1,6 +1,11 @@
 <?php
 include 'scripts/db_connection.php';
 
+
+// Esto es un script para ver los mensajes en inbox.php, se supone que debería estar en la carpeta de
+// scripts pero se rompe toda la página por un motivo que sinceramente no termino de entender si lo dejo allí.
+// Así que se queda en la carpeta raíz porque ese fragmento de código tiene más fuerza de voluntad que
+// yo después de 12 horas programando.
 if (isset($_GET['mensaje_id'])) {
     $mensaje_id = $_GET['mensaje_id'];
 
