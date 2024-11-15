@@ -12,3 +12,9 @@ Principalmente se añadieron las funciones básicas para enviar mensajes y que s
 
 ## Tercer Commit
 Unicamente se añadio una página para ver los mensajes que le fueron enviados a cada usuario, además de eso se hizo la redirección del login para el inbox del usuario.
+
+## Cuarto Commit
+Se aplicaron estilos simples con CSS, además se agregaron todas las páginas necesarias para el funcionamiento básico completo de la página, incluyendo verificaciones de inicio de sesión y creación dinámica de las páginas web. También se agregaron sitios de administración solo disponibles para usuarios con la condición de administradores, junto con la modifición en las tablas de las bases de datos. La intención del sitio de administración es la de modificar el estado de los usuarios y de modificar la información pública del sitio.
+
+## Quinto Commit
+Se arreglaron fallos de redirección y problemas de mala aplicación de CSS para realizar la entrega final para el integrador.
