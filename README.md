@@ -2,7 +2,7 @@
 La idea de esta página es de diseñar un sistema de envio de mensajes entre usuarios registrados, incluyendo envió de imágenes, vídeos y archivos de audio. Este es un trabajo para la cátedra de Paradigmas y Lenguajes de Programación 3 y para la cátedra de Bases de Datos de la carrera de Ingeniería en Sistemas de Información de la Universidad de la Cuenca del Plata.
 
 ## Acceso a la página web
-La página actualmente solo es accesible de manera local.
+La página actualmente solo es accesible de manera local ya que por el uso de PHP no puedo publicarla por github. En caso de que quiera accederse al proyecto se debe clonar el repositorio, crear una base de datos en su sistema y reemplazar la información en "scripts/db_connection.php" con los datos de acceso de la base de datos. Para el host local para pruebas utilice XAMPP con Apache.
 
 ## Primer Commit
 En el primer commit se subió la página con las funcionalidades más básicas, se creo la base de datos con MySQL y se conecto a la página web con el uso de PHP. Las únicas páginas disponibles son el index con un login, una página para registrarse y una página para iniciar sesión en la página. Todavía no se incluyo el uso de css ya que la idea era subir las funciones más básicas de registro de usuarios y de inicio de sesión. 
